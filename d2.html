@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--ul unordered list
+        ol ordered list
+        li list item 
+        dl defined list
+        dt define title
+        dd define describes-->
+    <ul>
+        <li>第一项</li>
+        <li>第二项</li>
+        <li>第三项</li>
+    </ul>
+    <ol>
+        <li>第一项</li>
+        <li>第二项</li>
+        <li>第三项</li>
+    </ol>
+    <dl>
+        <dt>列表标题</dt>
+        <dd>列表描述 / 详情</dd>
+    </dl>
+
+    <!--tr table row
+        th table header
+        td table data-->
+    <table border="1">
+        <tr>
+            <th>姓名</th>
+            <th>语文</th>
+            <th>数学</th>
+            <th>总分</th>
+        </tr>
+        <tr>
+            <td>张三</td>
+            <td>99</td>
+            <td>100</td>
+            <td>199</td>
+        </tr>
+        <tr>
+            <td>李四</td>
+            <td>98</td>
+            <td>100</td>
+            <td>198</td>
+        </tr>
+        <tr>
+            <td>总结</td>
+            <td>全市第一</td>
+            <td>全市第一</td>
+            <td>全市第一</td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>语文</th>
+                <th>数学</th>
+                <th>总分</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>张三</td>
+                <td>99</td>
+                <td rowspan="2">100</td>
+                <td>199</td>
+            </tr>
+            <tr>
+                <td>李四</td>
+                <td>98</td>
+                <!-- <td>100</td> -->
+                <td>198</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>总结</td>
+                <td colspan="3">全市第一</td>
+                <!-- <td>全市第一</td>
+            <td>全市第一</td> -->
+            </tr>
+        </tfoot>
+    </table>
+
+    <input type="text" placeholder="占位文本：提示信息。文本框和密码框都可以使用。">
+
+    <input type="radio" name="gender" checked> 男
+    <input type="radio" name="gender"> 女
+
+    <!-- 默认情况下，文件上传表单控件只能上传一个文件，添加 multiple 属性可以实现文件多选功能。 -->
+    <input type="file" multiple>
+
+    <!-- 多选框也叫复选框，默认选中：checked。 -->
+    <input type="checkbox" name="g" checked> 选项1
+    <input type="checkbox" name="g" > 选项2
+    <input type="checkbox" name="g" > 选项3
+    <input type="checkbox" name="g" > 选项4
+
+    <h2>下拉表单</h2>
+    <select>
+        <option>北京</option>
+        <option>上海</option>
+        <option>广州</option>
+        <option>深圳</option>
+        <option selected>武汉</option>
+    </select>
+
+    <textarea>文本域，多行输入文本的表单控件</textarea>
+
+    <input type="radio" id="nan" name="xingbie" checked>
+    <label for="nan">男</label>
+    <label><input type="radio" name="xingbie">女</label>
+
+    <button type="reset">重置</button>
+
+    <!-- form 表单区域 -->
+    <!-- action="" 发送数据的地址 -->
+    <form action="">
+        用户名：<input type="text">
+        <br><br>
+        密码：<input type="password">
+        <br><br>
+        <!-- 如果省略 type 属性，功能是 提交 -->
+        <button type="submit">提交</button>
+        <button type="reset">重置</button>
+        <button type="button">普通按钮</button>
+    </form>
+
+    <div>div 标签，独占一行,大盒子</div>
+    <span>span 标签，不换行,小盒子</span>
+
+    <p>空格&nbsp;大于号&gt;小于号&lt;</p>
+</body>
+
+</html>
