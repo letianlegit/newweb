@@ -1,0 +1,21 @@
+p {
+    font-size:30px;
+    font-weight:700;
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    font-style:italic;
+    line-height: 30px;
+    /* 当前标签字体大小为16px */
+    /* line-height: 2; */
+    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+}
+
+h1{
+    font: italic 700 30px/2 楷体;
+    text-indent: 2em;
+    text-align:center;
+    text-decoration:underline;
+    color:aqua;
+}
+
