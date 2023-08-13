@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 400px;
+            height: 400px;
+            background-image: url(./images/car.jpg);
+
+            background-position: center bottom;
+            background-position: 50px -100px;
+            background-position: 50px center;
+
+            /* contain：如果图的宽高跟盒子尺寸相等停止缩放，可能导致盒子有露白 */
+            /* background-size: contain; */
+
+            /* cover：图片完全覆盖盒子，可能导致图片显示不全 */
+            /* background-size: cover; */
+
+            /* 100% 图片的宽度跟盒子宽度一样，图片的高度按照图片比例等比缩放 */
+            background-size: 100%;
+
+            background-attachment: scroll;
+        }
+
+        /*背景复合属性
+        属性名：background（bg）
+        属性值：背景色 背景图 背景图平铺方式 背景图位置/背景图缩放 背景图固定（空格隔开各个属性值，不区分顺序）
+
+        */
+    </style>
+</head>
+
+<body>
+    <div>123</div>
+    <div style="background-repeat: no-repeat;">12345</div>
+    <img src="./images/3.png" alt="">
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /*后代选择器*/ 
+        div span {
+            color: red;
+        }
+        
+        /*子代选择器*/ 
+        div > span{
+            color:aqua;
+        }
+
+        /*并集选择器*/ 
+        h1, h2 {
+            color:aquamarine;
+        }
+        
+        /*交集选择器*/ 
+        p.box{
+            color:gray;
+        }
+
+        /*伪类选择器*/
+        p:hover {
+            color:brown;
+        }
+
+        a:hover,a:link{
+      color: green;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>123</h1>
+    <h2>456</h2>
+    <div>
+        <span>这是 div 的儿子 span</span>
+        <span><span>这是 div 的孙子 span</span></span>
+    </div>
+    <p class="box">123456</p>
+    <p>123456</p>
+    <a link="#">超链接</a>
+
+    <!-- CSS特性：化简代码 / 定位问题，并解决问题
+    继承性
+    层叠性
+    优先级 -->
+</body>
+
+</html>
